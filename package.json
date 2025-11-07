@@ -2,11 +2,15 @@
   "name": "wu-thasala-showcase",
   "version": "1.0.0",
   "description": "A showcase for the WU Thasala mobile application.",
+  "type": "module",
   "main": "src/main.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   },
   "keywords": [
     "WU Thasala",
