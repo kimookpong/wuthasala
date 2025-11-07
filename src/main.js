@@ -4,7 +4,6 @@ import { Features } from "./components/Features";
 import { Screenshots } from "./components/Screenshots";
 import { Footer } from "./components/Footer";
 import { MobileCTA } from "./components/MobileCTA";
-import { ProjectDetails } from "./components/ProjectDetails";
 
 function detectOS() {
   const ua = navigator.userAgent || navigator.vendor || window.opera || "";
@@ -26,7 +25,6 @@ function render() {
   if (!app) return;
   app.innerHTML = `
 		${Hero()}
-    ${ProjectDetails()}
 		${Features()}
 		${Screenshots()}
 		${Footer()}
