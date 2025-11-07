@@ -1,0 +1,22 @@
+{
+  "name": "wu-thasala-showcase",
+  "version": "1.0.0",
+  "description": "A showcase for the WU Thasala mobile application.",
+  "main": "src/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "keywords": [
+    "WU Thasala",
+    "showcase",
+    "mobile application"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}
