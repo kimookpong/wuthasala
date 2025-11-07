@@ -6,12 +6,17 @@ export function Hero() {
         <section class="hero section">
             <div class="container hero-grid">
                 <div class="hero-copy">
-                    <div class="brand">
-                        <img src="${appIcon}" alt="WU Thasala" class="brand-icon"/>
-                        <span class="brand-name">WU Thasala</span>
+                    <div class="brand-hero">
+                        <div class="brand-icon-wrapper">
+                            <img src="${appIcon}" alt="WU Thasala" class="brand-icon"/>
+                        </div>
+                        <div class="brand-text">
+                            <span class="brand-name">WU Thasala</span>
+                        </div>
                     </div>
-                    <h1 class="title">Mobile Application สำหรับบุคลากร</h1>
-                    <p class="subtitle">แผนการพัฒนาเพิ่มเติม 2569 — เช็คอิน/เช็คเอาท์ • การแจ้งเตือน • เข้าสู่ระบบด้วย WU PASS, PIN, Biometric</p>
+                    <h1 class="title">Mobile Application สำหรับบุคลากรมหาวิทยาลัยวลัยลักษณ์</h1>
+                    <p class="subtitle">ระบบ Mobile Application สำหรับบุคลากรนี้ถูกออกแบบมาเพื่อเพิ่มประสิทธิภาพการทำงานและการสื่อสารภายในองค์กร
+          โดยรองรับการใช้งานบนระบบปฏิบัติการ <strong>iOS</strong> และ <strong>Android</strong></p>
                     <div class="store-badges" role="group" aria-label="ดาวน์โหลดแอป">
                         <a class="store-badge appstore" href="https://apps.apple.com/us/app/wu-thasala/id6747904778" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
                             <svg class="store-icon" viewBox="0 0 24 24" fill="currentColor">

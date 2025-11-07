@@ -12,7 +12,7 @@ export function Footer() {
                         </div>
                         <div class="brand-info">
                             <h3 class="brand-title">WU Thasala</h3>
-                            <p class="brand-subtitle">Mobile Application สำหรับบุคลากร</p>
+                            <p class="brand-subtitle">Mobile Application สำหรับบุคลากรมหาวิทยาลัยวลัยลักษณ์</p>
                         </div>
                     </div>
 

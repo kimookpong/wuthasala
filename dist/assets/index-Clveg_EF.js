@@ -1,16 +1,18 @@
-(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))i(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const r of t.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&i(r)}).observe(document,{childList:!0,subtree:!0});function o(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function i(e){if(e.ep)return;e.ep=!0;const t=o(e);fetch(e.href,t)}})();const l="/assets/app-icon-C8Wcu3VU.svg",n="/assets/screenshot1-DAICbkiU.svg";function c(){return`
+(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))r(e);new MutationObserver(e=>{for(const a of e)if(a.type==="childList")for(const i of a.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&r(i)}).observe(document,{childList:!0,subtree:!0});function o(e){const a={};return e.integrity&&(a.integrity=e.integrity),e.referrerPolicy&&(a.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?a.credentials="include":e.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function r(e){if(e.ep)return;e.ep=!0;const a=o(e);fetch(e.href,a)}})();const l="/assets/app-icon-C8Wcu3VU.svg",n="/assets/screenshot1-DAICbkiU.svg";function c(){return`
         <section class="hero section">
             <div class="container hero-grid">
                 <div class="hero-copy">
-                    <div class="brand">
-                        <img src="${l}" alt="WU Thasala" class="brand-icon"/>
-                        <span class="brand-name">WU Thasala</span>
+                    <div class="brand-hero">
+                        <div class="brand-icon-wrapper">
+                            <img src="${l}" alt="WU Thasala" class="brand-icon"/>
+                        </div>
+                        <div class="brand-text">
+                            <span class="brand-name">WU Thasala</span>
+                        </div>
                     </div>
-                    <h1 class="title">Mobile Application สำหรับบุคลากร</h1>
-                     <p>
-                        ระบบ Mobile Application สำหรับบุคลากรนี้ถูกออกแบบมาเพื่อเพิ่มประสิทธิภาพการทำงานและการสื่อสารภายในองค์กร
-                        โดยรองรับการใช้งานบนระบบปฏิบัติการ <strong>iOS</strong> และ <strong>Android</strong>
-                    </p>
+                    <h1 class="title">Mobile Application สำหรับบุคลากรมหาวิทยาลัยวลัยลักษณ์</h1>
+                    <p class="subtitle">ระบบ Mobile Application สำหรับบุคลากรนี้ถูกออกแบบมาเพื่อเพิ่มประสิทธิภาพการทำงานและการสื่อสารภายในองค์กร
+          โดยรองรับการใช้งานบนระบบปฏิบัติการ <strong>iOS</strong> และ <strong>Android</strong></p>
                     <div class="store-badges" role="group" aria-label="ดาวน์โหลดแอป">
                         <a class="store-badge appstore" href="https://apps.apple.com/us/app/wu-thasala/id6747904778" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store">
                             <svg class="store-icon" viewBox="0 0 24 24" fill="currentColor">
@@ -54,7 +56,7 @@
                 </div>
             </div>
         </section>
-    `}const g="/assets/screenshot2-BpmM85Y5.svg",u="/assets/screenshot3-BPWa21Ev.svg",h=[n,g,u];function v(){return`
+    `}const v="/assets/screenshot2-BpmM85Y5.svg",g="/assets/screenshot3-BPWa21Ev.svg",h=[n,v,g];function u(){return`
         <section class="section screenshots">
             <div class="container">
                 <h2 class="section-title">หน้าจอแอป</h2>
@@ -69,21 +71,48 @@
                 </div>
             </div>
         </section>
-    `}function f(){return`
+    `}function f(){const t=new Date().getFullYear();return`
         <footer class="footer">
-            <div class="container footer-grid">
-                <div class="foot-left">
-                    <div class="brand small">WU Thasala</div>
-                    <p class="muted">© ${new Date().getFullYear()} WU Thasala • All rights reserved</p>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <div class="brand-logo-footer">
+                            <img src="${l}" alt="WU Thasala" />
+                        </div>
+                        <div class="brand-info">
+                            <h3 class="brand-title">WU Thasala</h3>
+                            <p class="brand-subtitle">Mobile Application สำหรับบุคลากรมหาวิทยาลัยวลัยลักษณ์</p>
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <div class="footer-section">
+                            <h4 class="footer-heading">ดาวน์โหลด</h4>
+                            <a href="https://apps.apple.com/us/app/wu-thasala/id6747904778" target="_blank" rel="noopener" class="footer-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="link-icon">
+                                    <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/>
+                                </svg>
+                                App Store
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.cdtwu.thasalaapp" target="_blank" rel="noopener" class="footer-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="link-icon">
+                                    <path d="M3.609 1.814L13.792 12 3.609 22.186a.996.996 0 0 1-.609-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.802 8.99l-2.303 2.303-8.635-8.635z"/>
+                                </svg>
+                                Google Play
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="foot-right">
-                    <a href="https://apps.apple.com/us/app/wu-thasala/id6747904778" target="_blank" rel="noopener">App Store</a>
-                    <a href="https://play.google.com/store/apps/details?id=com.cdtwu.thasalaapp" target="_blank" rel="noopener">Google Play</a>
+
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <p>© ${t} WU Thasala. All rights reserved.</p>
+                    </div>
+                    <div class="powered-by">
+                        <span>Powered by</span>
+                        <img class="powered-logo" src="https://hrms.wu.ac.th/img/cdtwu.png" alt="CDT WU" loading="lazy"/>
+                    </div>
                 </div>
-            </div>
-            <div class="container powered-by">
-                <span class="muted">Powered by</span>
-                <img class="powered-logo" src="https://hrms.wu.ac.th/img/cdtwu.png" alt="CDT WU" loading="lazy"/>
             </div>
         </footer>
     `}function m(){return`
@@ -101,11 +130,11 @@
         <span>Google Play</span>
       </a>
     </div>
-  `}function b(){const a=navigator.userAgent||navigator.vendor||window.opera||"",s=/android/i.test(a),o=/iPad|iPhone|iPod/.test(a)||navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1;return s?"android":o?"ios":"other"}function y(){const a=b();a==="android"?document.body.classList.add("is-android"):a==="ios"&&document.body.classList.add("is-ios");const s=document.getElementById("app");s&&(s.innerHTML=`
+  `}function b(){const t=navigator.userAgent||navigator.vendor||window.opera||"",s=/android/i.test(t),o=/iPad|iPhone|iPod/.test(t)||navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1;return s?"android":o?"ios":"other"}function y(){const t=b();t==="android"?document.body.classList.add("is-android"):t==="ios"&&document.body.classList.add("is-ios");const s=document.getElementById("app");s&&(s.innerHTML=`
 		${c()}
 		${p()}
-		${v()}
+		${u()}
 		${f()}
 		${m()}
 	`)}y();
-//# sourceMappingURL=index-Br8goD7X.js.map
+//# sourceMappingURL=index-Clveg_EF.js.map
